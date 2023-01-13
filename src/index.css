@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: palevioletred;
+}
+
+.App{
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.sign-up-card{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+  border: 1px solid rgb(15, 15, 15);
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 20vw;  
+}
+
+.sign-up-card > div > label > img{
+  max-width: 20px;
+}
+
+.sign-inputs{
+  display: flex;
+  gap: .2rem;
+}
+
+.sub-button{
+  display: inline-flex;
+  align-self: center;
+}
+
+.user-list{
+  background-image: url('./assets/images/liquid-purple-art-painting-abstract-colorful-background-with-color-splash-paints-modern-art.jpg');
+  background-repeat: no-repeat;
+  width: 60vw;
+  height: 80vh;
+  background-size: cover;
+  padding: 3rem 2rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  overflow-y: scroll;
+}
+
+.user-card{
+  background-color: rgba(240, 248, 255, 0.4);
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid rgb(15, 15, 15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 10px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-purple); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-purple); 
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-purple); 
+}
+
+@media only screen and (max-width: 1187px) {
+
+  .App{
+    flex-direction: column;
+    padding: 0rem;
+    gap: 1rem;
+  }
+
+  .sign-up-card{
+    font-size: 10px;
+    gap: 0.3rem;
+    padding: 0.1rem 0.2rem;
+    width: 90vw;
+  }
+
+  .user-list{
+    width: 82vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 45vh;
+  }
+
+  .double-input{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .double-input > input{
+    max-width: 45%;
+  }
+}
